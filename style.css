@@ -1,0 +1,158 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+img{
+
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper{
+
+    background-color:  hsl(27, 66%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.center{
+
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    /* Above step is important because it decide width  */
+    gap: 2em;
+    padding: 2em 1em;
+   
+}
+
+.balance{
+
+    background-color: hsl(10, 79%, 65%);
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.graph{
+
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 10px;
+    gap: 1.5em;
+    width: 100%;
+}
+
+
+
+.partition{
+
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0.5em 0;
+}
+
+.middle-graph{
+
+   
+    display: flex;
+    gap: 0.9em;
+    align-items: end;
+    justify-content: center;
+    padding: 1em;
+}
+
+.bar-box{
+
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    width: 13%;
+    gap: 0.5em;
+    
+}
+
+.bar-box h5{
+    color: rgb(195, 195, 195);
+    font-weight: 500;
+}
+
+.info{
+
+    margin-bottom: 1em;
+    background-color: #333;
+    color: #fff;
+    /* width: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius:5px;
+    opacity: 0;
+    font-size: 0.8em;
+   
+}
+
+.bar-box:hover>.info{
+
+    opacity: 1;
+}
+
+.bar{
+
+    width: 100%;
+    height: 50%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    position: relative;
+}
+
+.bar:hover{
+
+    background-color: hsl(186, 45%, 67%);
+    cursor: pointer;
+}
+
+
+
+.total h4{
+
+    font-size: 0.9em;
+    color: rgb(171, 171, 171);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.total{
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.right{
+
+    text-align: right;
+}
+
+@media screen and (max-width:600px) {
+
+    .center{
+
+        padding: 10em auto;
+    }
+    
+}
